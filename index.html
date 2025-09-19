@@ -5,27 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
-  <body>
+  <body style="background-color: #3b3b3b; color: white">
+    <!-- The navigartion of the website -->
     <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" style="color: aliceblue">Home</a>
+      <a href="#about" style="color: aliceblue">About</a>
+      <a href="#work" style="color: aliceblue">Work</a>
+      <a href="#resume" style="color: aliceblue">Resume</a>
+      <a href="#contact" style="color: aliceblue">Contact</a>
     </nav>
 
-    <section id="home">
+    <header id="home">
       <h1>Hello, I'm Katia Ghezali</h1>
-      <h1>A Full Stack Web Developer</h1>
-      <h1>Embracing Challenges, Crafting Solutions</h1>
+      <h2>A Full Stack Web Developer</h2>
+      <h3>Embracing Challenges, Crafting Solutions</h3>
 
       <button>Contact Me</button>
       <button>Download CV</button>
-    </section>
+    </header>
     <br />
     <br />
     <br />
     <br />
+
+    <!-- The different sections of the website-->
+
+    <!-- About Me Section-->
+
     <section id="about">
       <h3>About Me</h3>
       <p>
@@ -54,31 +60,58 @@
     <br />
     <br />
     <br />
+    <!-- Work Section-->
+
     <section id="work">
       <h3>My Projects</h3>
       <dl>
-        <dt><b>Portfolio</b></dt>
+        <dt style="font-weight: bold">Portfolio</dt>
         <dd>A website about who I am as a developer, showcasing my skills.</dd>
+        <img
+          src="assets/portfolio.png"
+          alt=" Screenshot of my Portfolio project"
+          width="300"
+        />
+
         <br />
-        <dt><b>Student Store</b></dt>
+        <dt style="font-weight: bold">Student Store</dt>
         <dd>
           A marketplace for students to sell, borrow, lend and purchase products
           online
         </dd>
+        <img
+          src="assets/sstore.png"
+          alt="Screenshot of my Student Store project"
+          width="300"
+        />
+
         <br />
 
-        <dt><b>CNChill</b></dt>
+        <br />
+
+        <dt style="font-weight: bold">CNChill</dt>
         <dd>
           A website displaying all type of movies with the necessary
           information, as well as the actors information
         </dd>
+        <img
+          src="assets/cnchill.png"
+          alt="Screenshot of my CNChill project"
+          width="300"
+        />
         <br />
 
-        <dt><b>EBuy</b></dt>
+        <dt style="font-weight: bold">EBuy</dt>
 
-        <dd>An online store where you users couls buy products</dd>
+        <dd>An online store where you users could buy products</dd>
+        <img
+          src="assets/ebuy.png"
+          alt="Screenshot of my Ebuy project"
+          width="300"
+        />
+
         <br />
-        <dt><b>Weather App</b></dt>
+        <dt style="font-weight: bold">Weather App</dt>
 
         <dd>Weather App</dd>
       </dl>
@@ -101,9 +134,12 @@
     <br />
     <br />
     <br />
+
+    <!-- Experience Section-->
+
     <section id="resume">
+      <h3>My Experience</h3>
       <table border="1">
-        <h3>My Experience</h3>
         <tr>
           <th>
             Oct 2023 - Jan 2024 <br />
@@ -121,8 +157,8 @@
         </tr>
         <tr>
           <th>
-            un 2023 - Dec 2023 <br />
-            Front-End Web Developement - Bootcamp <br />
+            Jun 2023 - Dec 2023 <br />
+            Front-End Web Development - Bootcamp <br />
             Re:Coded
           </th>
           <td>
@@ -172,20 +208,35 @@
     <br />
     <br />
 
+    <!-- Contact Section-->
+
     <section id="contact">
       <h3>Contact Me</h3>
       <form>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" /> <br /><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+        />
+        <br /><br />
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" /><br /><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        /><br /><br />
         <label for="message">Message:</label>
-        <textarea id="message" name="message"> </textarea><br /><br />
+        <textarea id="message" name="message" placeholder="Enter your message">
+        </textarea
+        ><br /><br />
         <button type="submit">Send</button>
       </form>
     </section>
 
-    <footer>
+    <footer style="background-color: #222; padding: 10px; text-align: center">
       <p>© 2025 Katia | All rights reserved</p>
     </footer>
   </body>
